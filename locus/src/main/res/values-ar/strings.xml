@@ -1,0 +1,13 @@
+<resources>
+    <string name="enable">ممكن</string>
+    <string name="cancel">إلغاء</string>
+    <string name="grant">منحة</string>
+    <string name="deny">أنكر</string>
+    <string name="open_settings">أفتح الإعدادات</string>
+    <string name="rationale_text">مطلوب إذن الموقع من أجل استخدام هذه الميزة بشكل صحيح. يرجى منح الإذن</string>
+    <string name="rationale_title">إذن الموقع مطلوب</string>
+    <string name="blocked_title">تم حظر تصريح الموقع</string>
+    <string name="blocked_text">تم حظر إذن الموقع. يرجى السماح من شاشة الإعدادات لاستخدام هذه الميزة</string>
+    <string name="resolution_title">الموقع معطل حاليًا</string>
+    <string name="resolution_text">يرجى تمكين الوصول إلى موقع الجهاز للمضي قدمًا.</string>
+</resources>

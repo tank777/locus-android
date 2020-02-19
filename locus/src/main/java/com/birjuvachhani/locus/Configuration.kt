@@ -16,6 +16,7 @@
 package com.birjuvachhani.locus
 
 import android.os.Parcelable
+import androidx.annotation.StringRes
 import com.google.android.gms.location.LocationRequest
 import kotlinx.android.parcel.Parcelize
 
@@ -30,14 +31,18 @@ import kotlinx.android.parcel.Parcelize
 @LocusMarker
 @Parcelize
 data class Configuration(
-    var rationaleText: String =
-        "Location permission is required in order to use this feature properly.Please grant the permission.",
-    var rationaleTitle: String = "Location permission required!",
-    var blockedTitle: String = "Location Permission Blocked",
-    var blockedText: String =
-        "Location permission is blocked. Please allow permission from settings screen to use this feature",
-    var resolutionTitle: String = "Location is currently disabled",
-    var resolutionText: String = "Please enable access to device location to proceed further.",
+    @StringRes
+    var rationaleText: Int = R.string.rationale_text,
+    @StringRes
+    var rationaleTitle: Int = R.string.rationale_title,
+    @StringRes
+    var blockedTitle: Int = R.string.blocked_title,
+    @StringRes
+    var blockedText: Int = R.string.blocked_text,
+    @StringRes
+    var resolutionTitle: Int = R.string.resolution_title,
+    @StringRes
+    var resolutionText: Int = R.string.resolution_text,
     internal var locationRequest: LocationRequest = getDefaultRequest(),
     var shouldResolveRequest: Boolean = true,
     var enableBackgroundUpdates: Boolean = false,
